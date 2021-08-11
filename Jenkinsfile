@@ -3,7 +3,7 @@ pipeline{
 agent any
 
 tools{
-  nodejs 'Maven 3.6.3'
+  nodejs 'nodejs'
      }
 
 stages{
@@ -27,7 +27,7 @@ stage('package'){
 	sh 'npm run package'
 	}
       }
-
+}
 post{
 	always{
 	echo 'this pipeline is completed'
@@ -35,4 +35,4 @@ post{
 	}
 }
 
-}
+
